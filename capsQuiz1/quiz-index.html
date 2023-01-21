@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercises</title>
+    <link rel="stylesheet" href="./assets/css/quiz-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e170880bfe.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+<header>
+    <!-- Navbar -->
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-light mb-2 pb-2">
+        <a class="navbar-brand" href="#">
+          <img src="assets/imgs/logo.png" height="60" alt="Placeholder Logo"
+            loading="lazy" />
+        </a>
+        <span class="fw-bold fs-1">Batch WD19P</span>
+
+        <ul class="navbar-nav ms-auto d-flex flex-row">
+          <li class="nav-item me-3 me-lg-0">
+            <button type="button" class="btn btn-info">Enter Session <i class="fas fa-door-open"></i></button>
+          </li>
+  
+          <!-- Avatar -->
+          <li class="nav-item dropdown">
+            <a class="nav-link d-flex align-items-center" href="#" role="button" aria-expanded="false">
+              <img src="https://avatars.dicebear.com/api/adventurer-neutral/mail%40ashallendesign.co.uk.svg"
+               class="rounded-circle" height="35" alt="Avatar" loading="lazy" />
+            </a>
+          </li>
+        </ul>
+    </nav>
+    <!-- Navbar -->
+  </header>
+  
+  <!--Main layout-->
+  <main>
+    <div class="container">
+        <div class="quiz-box my-2 py-2">
+            <div id="quiz">
+                <h1>Test Your Knowledge</h1>
+                <div class="quiz-header">
+                    <p id="progress">Question x of y</p>
+                    <p id="count-down"><i class="fas fa-clock"></i></p>
+                </div>
+                <p id="question"></p>
+                <div class="buttons">
+                    <button class="bttn" id="bttn0">
+                        A. <span id="choice0"></span>
+                    </button>
+                    <button class="bttn" id="bttn1">
+                        B. <span id="choice1"></span>
+                    </button>
+                    <button class="bttn" id="bttn2">
+                        C. <span id="choice2"></span>
+                    </button>
+                    <button class="bttn" id="bttn3">
+                        D. <span id="choice3"></span>
+                    </button>
+                </div>
+                <hr>
+                <footer>
+                    <p>(Site Name) Quizzes</p>
+                </footer>
+            </div>
+        </div>
+	
+	</div>
+  </main>
+  <!--Main layout-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./assets/js/quiz.js"></script>
+  </body>
+</html>
